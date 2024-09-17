@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+--purple:hsl(228, 45%, 44%);
+--Very_dark_cyan: hsl(183, 100%, 15%);
+--Dark_grayish_cyan: hsl(186, 14%, 43%);
+--Grayish_cyan: hsl(184, 14%, 56%);
+--Light_grayish_cyan: hsl(185, 41%, 84%);
+--Very_light_grayish_cyan: hsl(189, 41%, 97%);
+--textcolor: hsl(183, 100%, 40%);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    display: flex; /* Flex container for centering */
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: var(--Light_grayish_cyan);
+    font-family: 'Space Mono', monospace; /* Updated font-family */
+    font-weight: 500;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Very_light_grayish_cyan);
+    padding: 1rem;
+    border-radius: 15px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem; /* Space below h2 */
+  }
+.inputcard{
+    padding: 10px;
+}
+p{
+    padding-top: 1rem;
+}
+.percentage{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(2,50%);
+    padding: 0.5rem 0px;
+    row-gap: 10px;
+    column-gap:5px ;
+}
+.percent_option1,.percent_option2,.percent_option3,.percent_option4,.percent_option5{
+    display: flex;
+    place-content: center;
+background-color: var(--Very_dark_cyan);
+color: white;
+padding: 0px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+.percent_option1:hover,.percent_option2:hover,.percent_option3:hover,.percent_option4:hover,.percent_option5:hover{
+   background-color:  hsla(183, 100%, 35%,0.7);
+}
+
+.selected{
+    background-color:hsl(228, 45%, 44%);
+    animation-duration: 1s;
+    
+}
+.custom{
+    width:75px;
+    border:0.1px solid white;
+    border-radius: 5px;
+}
+
+input{
+width:100%;
+padding: 5px 5px;
+cursor: pointer;
+
+}
+input:hover,input:focus{
+    border-color: hsl(183, 100%, 60%);
+}
+
+.outputcard{
+background-color: var(--Very_dark_cyan);
+border-radius:15px ;
+margin-left: 20px;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 20px 1rem;
+
+}
+.tip{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wholeprice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+span{
+    font-size: 13px;
+    color:grey;
+    padding-left: 10px;
+}
+
+h1{
+    color:var(--textcolor);
+    font-size: 40px;
+}
+button{
+    text-align: center;
+   padding: 8px 100px;
+   margin: 0px;
+   background-color: var(--textcolor);
+   border:1px solid var(--textcolor);
+   border-radius: 5px;
+   cursor: pointer;
+   
+}
+button:hover{
+   background-color:  hsl(183, 100%, 35%);
+}
